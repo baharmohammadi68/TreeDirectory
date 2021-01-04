@@ -1,0 +1,13 @@
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.exe
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.deps.json
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.runtimeconfig.json
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.runtimeconfig.dev.json
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.dll
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\bin\Debug\netcoreapp3.1\LeetcodeProblems.pdb
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.csprojAssemblyReference.cache
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.csproj.CoreCompileInputs.cache
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.AssemblyInfoInputs.cache
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.AssemblyInfo.cs
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.dll
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.pdb
+C:\Users\bahar\source\repos\LeetcodeProblems\LeetcodeProblems\obj\Debug\netcoreapp3.1\LeetcodeProblems.genruntimeconfig.cache

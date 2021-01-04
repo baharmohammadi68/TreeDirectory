@@ -4,6 +4,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace _1000WebServersCodingChallenge
 {
@@ -22,28 +24,31 @@ namespace _1000WebServersCodingChallenge
 
         private static async Task CreateHTTPRequests(List<string> urls)
         {
-            var client = new HttpClient();
-
-            //Start requests for all of them
-            var requests = urls.Select
-                (
-                    url => client.GetAsync(url)
-                ).ToList();
-
-            //Wait for all the requests to finish
-            await Task.WhenAll(requests);
-
-            //Get the responses
-            var responses = requests.Select
-                (
-                    task => task.Result
-                );
-
-            foreach (var r in responses)
+            try
             {
-                // Extract the message body
-                var s = await r.Content.ReadAsStringAsync();
-                Console.WriteLine(s);
+                var client = new HttpClient();
+                //todo: add a solution for the following:
+                //Also consider that having a list of servers, like this one, does not guarantee a given
+                // server will be online when you attempt to reach it
+                //Start requests for all of them
+                var requests = urls.Select( url => client.GetAsync(url)).ToList();
+
+                //Wait for all the requests to finish
+                await Task.WhenAll(requests);
+
+                //Get the responses
+                IEnumerable<HttpResponseMessage> responses = requests.Select( task => task.Result);
+
+                foreach (var r in responses)
+                {
+                    // Extract the message body
+                    var s = await r.Content.ReadAsStringAsync();
+                    Console.WriteLine(s);
+                }
+            }
+            catch (Exception ex)
+            {
+                //todo: log error message using Nlog here
             }
         }
     }
