@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5yPrdli+toUTzh37Bh6L4PjOCllhWd3DCv/zjBe/71VR6rpT0A1+n5pyVMzq0+AiQBchzIzKurVDZRkAk7vt3g==",
+  "dgSpecHash": "BhxhBuM1ie0g1W/wyEeYznk+04fN6IltskKL97fTNGSLkF23VG4OxLC7P2cRjaGH1Nw+1gP/2hvnoDda6f0/yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bahar\\source\\repos\\1000WebServersCodingChallenge\\1000WebServersCodingChallenge\\1000WebServersCodingChallenge.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bahar\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

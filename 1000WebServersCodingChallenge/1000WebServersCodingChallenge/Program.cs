@@ -31,19 +31,19 @@ namespace _1000WebServersCodingChallenge
                 //Also consider that having a list of servers, like this one, does not guarantee a given
                 // server will be online when you attempt to reach it
                 //Start requests for all of them
-                var requests = urls.Select( url => client.GetAsync(url)).ToList();
+                var requests = urls.Select(url => client.GetAsync(url)).ToList();
 
                 //Wait for all the requests to finish
                 await Task.WhenAll(requests);
 
                 //Get the responses
-                IEnumerable<HttpResponseMessage> responses = requests.Select( task => task.Result);
+                IEnumerable<HttpResponseMessage> responses = requests.Select(task => task.Result);
 
                 foreach (var r in responses)
                 {
                     // Extract the message body
-                    var s = await r.Content.ReadAsStringAsync();
-                    Console.WriteLine(s);
+                    string response = await r.Content.ReadAsStringAsync();
+                    ServerResponse parsed = Newtonsoft.Json.JsonConvert.DeserializeObject<ServerResponse>(response);
                 }
             }
             catch (Exception ex)
@@ -51,6 +51,31 @@ namespace _1000WebServersCodingChallenge
                 //todo: log error message using Nlog here
             }
         }
+        /*
+         public static Task<(T[] Results, Exception[] Exceptions)> WhenAllEx<T>(
+    params Task<T>[] tasks)
+{
+    tasks = tasks.ToArray(); // Defensive copy
+    return Task.WhenAll(tasks).ContinueWith(t => // return a continuation of WhenAll
+    {
+        var results = tasks
+            .Where(t => t.Status == TaskStatus.RanToCompletion)
+            .Select(t => t.Result)
+            .ToArray();
+        var aggregateExceptions = tasks
+            .Where(t => t.IsFaulted)
+            .Select(t => t.Exception) // The Exception is of type AggregateException
+            .ToArray();
+        var exceptions = new AggregateException(aggregateExceptions).Flatten()
+            .InnerExceptions.ToArray(); // Flatten the hierarchy of AggregateExceptions
+        if (exceptions.Length == 0 && t.IsCanceled)
+        {
+            // No exceptions and at least one task was canceled
+            exceptions = new[] { new TaskCanceledException(t) };
+        }
+        return (results, exceptions);
+    }, default, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Default);
+}*/
     }
 }
 
