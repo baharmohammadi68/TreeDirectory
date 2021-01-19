@@ -11,7 +11,7 @@ namespace _1000WebServersCodingChallenge
         public long Uptime { get; set; }
         public long Request_Count { get; set; }
         public long Error_Count { get; set; }
-        public int Success_Count { get; set; }
+        public long Success_Count { get; set; }
 
     }
 }

@@ -6,6 +6,9 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json.Linq;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace _1000WebServersCodingChallenge
 {
@@ -18,8 +21,9 @@ namespace _1000WebServersCodingChallenge
         static async Task Main(string[] args)
         {
             Console.WriteLine("Reading the list of 1000 servers!");
-            List<string> servers = FileReader.ReadFile(filePath);
-            await CreateHTTPRequests(servers);
+            //List<string> servers = FileReader.ReadFile(filePath);
+            //await CreateHTTPRequests(servers);
+            FileReader.ReadResponseFile();
         }
 
         private static async Task CreateHTTPRequests(List<string> urls)
@@ -51,6 +55,9 @@ namespace _1000WebServersCodingChallenge
                 //todo: log error message using Nlog here
             }
         }
+
+
+
         /*
          public static Task<(T[] Results, Exception[] Exceptions)> WhenAllEx<T>(
     params Task<T>[] tasks)
