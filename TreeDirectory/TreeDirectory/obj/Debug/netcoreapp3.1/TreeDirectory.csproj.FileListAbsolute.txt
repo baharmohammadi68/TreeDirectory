@@ -1,0 +1,13 @@
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.exe
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.deps.json
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.runtimeconfig.json
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.runtimeconfig.dev.json
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.dll
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\bin\Debug\netcoreapp3.1\TreeDirectory.pdb
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.csprojAssemblyReference.cache
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.csproj.CoreCompileInputs.cache
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.AssemblyInfoInputs.cache
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.AssemblyInfo.cs
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.dll
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.pdb
+C:\Users\bahar\source\repos\TreeDirectory\TreeDirectory\obj\Debug\netcoreapp3.1\TreeDirectory.genruntimeconfig.cache
